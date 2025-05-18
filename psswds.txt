@@ -1,0 +1,17 @@
+lecturer -
+username - s123@gmail.com  password - abd123
+username - j123@gmail.com  password - ras123
+username - r123@gmail.com  password - ray123
+
+
+students - 
+username - f123@gmail.com  password - far123
+username - a123@gmail.com  password - ahmed123
+username - t123@gmail.com  password - thani123
+
+admin-
+admin@example.com
+admin123
+
+http://localhost/phpmyadmin
+http://localhost/FYP-Management-System

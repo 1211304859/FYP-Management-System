@@ -1,0 +1,379 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Beige Background */
+    color: #333; /* Dark Grey Text */
+}
+
+header {
+    background-color: #ffffff; /* White Header */
+    color: #333;
+    padding: 15px 20px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Logout Button */
+.logout-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #c29958; /* Golden Beige */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #a67c3a;
+    transform: scale(1.05);
+}
+
+/* Page Containers */
+.page {
+    padding: 40px 20px;
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff; /* White Card */
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #c29958; /* Golden Beige Headings */
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li a {
+    display: block;
+    background-color: #c29958; /* Golden Beige Buttons */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card ul li a:hover {
+    background-color: #a67c3a; /* Darker Beige */
+    transform: scale(1.03);
+}
+
+/* Buttons */
+.card button {
+    background-color: #c29958; /* Golden Beige */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card button:hover {
+    background-color: #a67c3a;
+    transform: scale(1.05);
+}
+
+/* Return Button */
+.return-button {
+    background-color: #c29958; /* Golden Beige */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.return-button:hover {
+    background-color: #a67c3a;
+    transform: scale(1.05);
+}
+
+/* Forms */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    background-color: #c29958; /* Golden Beige */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #a67c3a;
+    transform: scale(1.03);
+}
+
+/* Navigation Links */
+a {
+    color: #c29958;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #a67c3a;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .logout-button {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Lecturer Dashboard and Links Styling */
+.card a.card-link {
+    display: inline-block;
+    background-color: #c29958; /* Golden Beige Buttons */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    font-weight: bold;
+    text-align: center;
+    width: 80%; /* Adjust width for better alignment */
+}
+
+.card a.card-link:hover {
+    background-color: #a67c3a; /* Darker Beige */
+    transform: scale(1.05);
+}
+
+/* Styled Table for View Meetings */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+    background-color: #c29958; /* Golden Beige */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1e6d6;
+    cursor: pointer;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #c29958;
+}
+
+/* Success and Error Messages */
+.success {
+    color: #4caf50; /* Green for success */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error {
+    color: #f44336; /* Red for error */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #c29958; /* Golden Beige */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #a67c3a; /* Darker Beige */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Approve/Reject Buttons */
+.approve-button {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.approve-button:hover {
+    background-color: #218838;
+}
+
+.reject-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reject-button:hover {
+    background-color: #c82333;
+}
+.action-button {
+    background-color: #c29958; /* Golden Beige */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: #a67c3a; /* Darker Beige */
+    transform: scale(1.05);
+}
+
+.approve-button {
+    background-color: #4caf50; /* Green */
+}
+
+.approve-button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.reject-button {
+    background-color: #f44336; /* Red */
+}
+
+.reject-button:hover {
+    background-color: #d32f2f; /* Darker Red */
+}
